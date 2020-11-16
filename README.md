@@ -13,17 +13,33 @@ I'm going to learn how to use an Arduino, and make awesome things with it!
 
 ```C++
 
-  Blink code goes here!!  // random comment for no reason...
-
+ // Wes Swanson
+// Hello arduino
+/* This makes an LED blink once a second and prints the word blink twice a 
+second.
+*/
+void setup() // Happens once, turns on the arduino uno before void loop starts.
+{
+ pinMode(13, OUTPUT); // This sets pin 13 to be an output
+ Serial.begin(9600); // This turns on the serial moneter
+}
+void loop()
+{
+  digitalWrite(13, HIGH); // turns pin 13 on
+  Serial.println("Blink"); // writes the word blink
+  delay(500); // Delay 1/2 second
+  digitalWrite(13, LOW); // turns pin 13 off
+  Serial.println("Blink"); // writes the work blink
+  delay(500); // Delay 1/2 second
+} // End of loop, starts over again
 ```
 
 ### Evidence
-[Here is my code on Arduino Create](https://create.arduino.cc/editor/helmstk1/9a3831dd-4b86-42f2-be49-c28b84874092/preview)
+[Here is my code on Arduino Create](https://create.arduino.cc/editor/wswanso44/c20ec904-8017-485b-bea4-df879d8c8323/preview)
 
 ### Image or Wiring
 
 ### Reflection
-
 
 ## FiniteLEDBlink
 
