@@ -10,14 +10,16 @@ I'm going to learn how to use an Arduino, and make awesome things with it!
 ## HelloArduino
 
 ### Description & Code
-
+The goal of this project was to learn how to use an arduino editor to create basic patterns for an arduino uno to follow.
+I learned to make an LED blink, and make the serial monitor display words at specific times.
+This is my code with comments to explain what each part does:
 ```C++
 // Wes Swanson
 // Hello arduino
-/* This makes an LED blink once a second and prints the word blink twice a 
-second.
+/* This makes an LED blink twice a second and prints the word blink twice a 
+second. It writes "Hello" in the void setup before it starts.
 */
-void setup() // Happens once, turns on the arduino uno before void loop starts.
+void setup() // This happens once, turns on the Arduino Uno before void loop starts.
 {
  pinMode(13, OUTPUT); // This sets pin 13 to be an output
  Serial.begin(9600); // This turns on the serial moneter
