@@ -38,6 +38,7 @@ void loop()
 
 ### Image or Wiring
 ![Image of wiring](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/1/0/Arduino_circuit_01_1.png)
+[Image source](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-1-blinking-an-led)
 ### Reflection
 
 ## FiniteLEDBlink
