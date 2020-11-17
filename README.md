@@ -43,11 +43,11 @@ void loop()
 [Link to image source](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-1-blinking-an-led)
 
 ### Reflection
-This project taught me a lot about circuts, LEDs, the Arduino Uno, and the code to control it all. Here are some important things I will need to know in the future:
+This project taught me a lot about circuits, LEDs, the Arduino Uno, and the code to control it all. Here are some important things I will need to know in the future:
 When wiring the LED:
 * Put LEDs the right direction (long side goes on the positive end).
 * use a resistor for the LEDs.
-* put the positive end into pin 13 if you are using this code, and put the negitive end into ground.
+* put the positive end into pin 13 if you are using this code, and put the negative end into ground.
 
 When writing the code it is important to know these definitions:
 * Pinmode() sets a pin to input or output.
@@ -57,7 +57,7 @@ When writing the code it is important to know these definitions:
 * delay() sets a delay time before the next action (this is needed to prevent it from crashing).
 
 Also, you will need to know:
-* Put a semicollen after each line of code.
+* Put a semicolen after each line of code.
 * Put two slashes before a line of text or a slash and a star before and after multiple lines of code.
 * Make sure there is a bracket before and after the code in the void setup and the void loop.
 
