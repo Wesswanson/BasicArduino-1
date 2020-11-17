@@ -48,12 +48,14 @@ When wiring the LED:
 * Put LEDs the right direction (long side goes on the positive end).
 * use a resistor for the LEDs.
 * put the positive end into pin 13 if you are using this code, and put the negitive end into ground.
+
 When writing the code it is important to know these definitions:
 * Pinmode() sets a pin to input or output.
 * Serial.begin() turns on the serial monitor.
 * Serial.println() prints a line of text on the serial monitor.
 * pinmode() turns a pin's output either on or off depending if you write "high" or "low",
 * delay() sets a delay time before the next action (this is needed to prevent it from crashing).
+
 Also, you will need to know:
 * Put a semicollen after each line of code.
 * Put two slashes before a line of text or a slash and a star before and after multiple lines of code.
