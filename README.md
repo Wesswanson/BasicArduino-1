@@ -3,7 +3,6 @@ I'm going to learn how to use an Arduino, and make awesome things with it!
 
 
 ## TableofContents
-* [TableOfContents](#TableOfContents)
 * [HelloArduino](#HelloArduino)
 * [FiniteLEDBlink](#FiniteLEDBlink)
 
@@ -42,7 +41,12 @@ void loop()
 ![Image of wiring](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/1/0/Arduino_circuit_01_1.png)
 
 [Link to image source](https://learn.sparkfun.com/tutorials/sik-experiment-guide-for-arduino---v32/experiment-1-blinking-an-led)
+
 ### Reflection
+This project taught me a lot about circuts, LEDs, the Arduino Uno, and the code to control it all. Here are some important things I will need to know in the future:
+* Put LEDs the right direction (long side goes on the positive end)
+* use a resistor for the LEDs.
+* 
 
 ## FiniteLEDBlink
 
