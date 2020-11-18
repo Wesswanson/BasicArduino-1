@@ -65,12 +65,64 @@ Also, you will need to know:
 
 ### Description & Code
 
+This assignment was to make an LED blink five times and than stop. I used the code from the assignment above and added more code to make three LEDs blink five times each and then stop. Here is my code with descriptions for what it does:
 ```C++
-Code Goes Here
+// Wes Swanson
+// finite LED blink
+/* This makes three LEDs blink in turn for 1/4 second with 1/4 second between each blink. Each time
+  an LED turns on, the serial monitor will display the pin that is blinking (13, 12, or 11) and the
+  work "Blink". It will also count up from 0 the number of times that LED has blinked. after blinking
+  5 times, the loop will stop.
+*/
+int led = 13;
+int W = 0; /* These functions creates variables that are always an integer (that is why int is written
+  before the variable). The number sets that variable to an initial value before they possibly change
+  later in the code.
+*/
+void setup() // This happens once, turns on the Arduino Uno before void loop starts.
+{
+  pinMode(led, OUTPUT); // This sets pin led to be an output pin.
+  pinMode((led - 1), OUTPUT); // This sets pin led-1 to be an output pin.
+  // Because led is set to pin 13, led-1 is pin 12.
+  pinMode((led - 2), OUTPUT); // This sets pin led-2 to be an output pin.
+  // Because led is set to pin 13, led-2 is pin 11.
+  Serial.begin(9600); // This turns on the serial moneter.
+  Serial.println("Hello"); // This writes the word hello.
+}
+void loop()
+{
+  if (W < 5) { // This line says that everything below happens only if W is less than five.
+    digitalWrite(led, HIGH); // turns pin led on.
+    Serial.print(led); // writes the value of led at that time (it could be 13, 12, or 11).
+    Serial.print(" Blink \t"); // writes the word blink and creates a space (like the tab key)
+    Serial.println(W); // writes the value of W at that time (it could be 0 through 4)
+    delay(250); // Delay 1/4 second
+    digitalWrite(led, LOW); // turns pin led off
+    delay(250); // Delay 1/4 second
+    led = led - 1; // sets the value of the variable led one lower.
+    if (led == 10) {
+      /* this is a conditional statement. == means that the computer should check to see
+        if led is equal to ten. If it is, the code below will happen, if not, it will jump to the end of
+        the loop and start over again.*/
+      led = 13; // this sets led back to 13 again (if it was at 10).
+      W = W + 1;
+      /* this makes the value of W (the variable that counts the number of times each led
+        has blinked) go up 1. This is also in the conditional statement so it happens every three
+        times this loop is run. */
+    }
+  }
+} // End of loop, starts over again
 ```
-
 ### Evidence
+
+Here is a [link](https://create.arduino.cc/editor/wswanso44/c20ec904-8017-485b-bea4-df879d8c8323/preview) to my code on Arduino Create.
 
 ### Image or Wiring
 
+This is a wiring diagram I made on tinkercad.com:
+
+
+
 ### Reflection
+
+
