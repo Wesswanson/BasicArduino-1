@@ -121,7 +121,7 @@ Here is a [link](https://create.arduino.cc/editor/wswanso44/c20ec904-8017-485b-b
 
 This is a wiring diagram I made on tinkercad.com:
 
-![image](Start Simulating.brd)
+![image]()
 
 ### Reflection
 
