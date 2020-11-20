@@ -132,7 +132,7 @@ This assignment taught me about variables and "if" statements, and I used those 
 * in parentheses, write the statement such as (x>4).
 * If you want the computer to find out whether something is equal to something, rather than making it equal, use double equal signs, like if (y == 1).
 * After the parentheses, write what should happen if your if statement is true inside brackets like this: {digitalWrite (9, HIGH)}
-As I learn to edit this code, it's getting more fun because I can do so many more things. I'm excited to learn more about this topic.
 
+As I learn to edit this code, it's getting more fun because I can do so many more things. I'm excited to learn more about this topic.
 
 ---
