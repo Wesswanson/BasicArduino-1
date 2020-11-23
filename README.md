@@ -177,8 +177,9 @@ void loop() {
 ```
 ### Evidence
 
-Click [here]() to view the code on arduino create.
-<iframe src=https://create.arduino.cc/editor/wswanso44/aac22c82-238b-4d9d-bd26-709a020c845f/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+Click [here](https://create.arduino.cc/editor/wswanso44/aac22c82-238b-4d9d-bd26-709a020c845f/preview) to view the code on arduino create.
+
 ### Image or Wiring
+
 ### Reflection
 ---
