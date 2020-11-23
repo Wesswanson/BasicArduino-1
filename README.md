@@ -124,7 +124,7 @@ Here is a [link](https://create.arduino.cc/editor/wswanso44/c20ec904-8017-485b-b
 
 This is a wiring diagram I made on tinkercad.com:
 
-![image](https://github.com/Wesswanson/BasicArduino-1/blob/main/Screenshot%202020-11-18%20at%203.50.12%20PM.png?raw=true)
+![image](https://github.com/Wesswanson/BasicArduino-1/blob/main/Screenshot%202020-11-23%20at%204.28.44%20PM.png?raw=true)
 
 ### Reflection
 
@@ -184,7 +184,7 @@ Click [here](https://create.arduino.cc/editor/wswanso44/aac22c82-238b-4d9d-bd26-
 
 This project uses the same wiring as the finite LED blinker:
 
-![image](https://github.com/Wesswanson/BasicArduino-1/blob/main/Screenshot%202020-11-18%20at%203.50.12%20PM.png?raw=true)
+![image](https://github.com/Wesswanson/BasicArduino-1/blob/main/Screenshot%202020-11-23%20at%204.28.44%20PM.png?raw=true)
 
 ### Reflection
 
