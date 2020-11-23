@@ -143,7 +143,7 @@ As I learn to edit this code, it's getting more fun because I can do so many mor
 /* Wes Swanson
   11/20/20
   Variable LED Blinker
-  This code makes three LEDs in pins 13, 12, and 11. Each one blinks for 2 seconds with 2 seconds inbetween before the delay time is lowered to
+  This code makes three LEDs in pins 13, 12, and 11. Each one blinks for 2 seconds with 2 seconds in between before the delay time is lowered to
   1.8 seconds and then 1.6 seconds and so on. When it reaches zero delay time it will jump back up to 2 seconds of delay time. The serial
   monitor will display the LED that is blinking as well as the current delay time when each LED turns on.
 */
@@ -176,6 +176,9 @@ void loop() {
 
 ```
 ### Evidence
+
+Click [here]() to view the code on arduino create.
+<iframe src=https://create.arduino.cc/editor/wswanso44/aac22c82-238b-4d9d-bd26-709a020c845f/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
 ### Image or Wiring
 ### Reflection
 ---
