@@ -180,5 +180,9 @@ Click [here](https://create.arduino.cc/editor/wswanso44/aac22c82-238b-4d9d-bd26-
 
 ### Image or Wiring
 
+This project uses the same wiring as the finite LED blinker:
+
+[image](https://github.com/Wesswanson/BasicArduino-1/blob/main/Screenshot%202020-11-18%20at%203.50.12%20PM.png?raw=true)
+
 ### Reflection
 ---
