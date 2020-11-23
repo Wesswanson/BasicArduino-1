@@ -139,6 +139,7 @@ As I learn to edit this code, it's getting more fun because I can do so many mor
 ## VariableLEDBlink
 
 ### Description & Code
+This assignment was to make an LED blink on for 2 seconds, off for 2 seconds and then on for 1.8 seconds and off for 1.8 seconds and so on until it got down to 0 seconds when it would go back up to 2 seconds. I created that project, but then added some code to make it use 3 LEDs instead of one. It will also print the delay time and the LED that's blinking every time one turns on. Here is my code that I wrote:
 ```C++
 /* Wes Swanson
   11/20/20
@@ -185,4 +186,11 @@ This project uses the same wiring as the finite LED blinker:
 ![image](https://github.com/Wesswanson/BasicArduino-1/blob/main/Screenshot%202020-11-18%20at%203.50.12%20PM.png?raw=true)
 
 ### Reflection
+
+This project didn't use many things that weren't in the finite LED blink project, but it gave me more practice writing code and using variables and if statements. The code above has two variables: delavar which is the delay time, and LED which is the LED that is blinking (13, 12 or 11). It also had two if statements, one to make the LED value go up from 11 to 13, and one to make delayvar go up from 200 to 2000. You should only need to use one variable and one if statement with one LED blinking.
+One important thing I learned while doing this was how to create new lines and spaces on the serial monitor. I don't know if this is the most efficient way because I just looked it up using articles from [arduino.cc](arduino.cc), but these are some things I learned and used:
+* serial.println(\t) will create a space the size of the tab key. You can also write it as: serial.print("\t"), but that won't be on it's own line.
+* serial.print("\n") will create a new line on the serial monitor.
+When writing your code, remember to be very clear with your writing and remember to use capitalization right especially when using variables. You can use the auto indent feature if you are using the arduino create editor.
+
 ---
