@@ -192,6 +192,7 @@ This project didn't use many things that weren't in the finite LED blink project
 One important thing I learned while doing this was how to create new lines and spaces on the serial monitor. I don't know if this is the most efficient way because I just looked it up using articles from [arduino.cc](https://www.arduino.cc/), but these are some things I learned and used:
 * serial.println(\t) will create a space the size of the tab key. You can also write it as: serial.print("\t"), but that won't be on it's own line.
 * serial.print("\n") will create a new line on the serial monitor.
+
 When writing your code, remember to be very clear with your writing and remember to use capitalization right especially when using variables. You can use the auto indent feature if you are using the arduino create editor.
 
 ---
