@@ -165,15 +165,14 @@ void loop() {
   digitalWrite(LED, LOW);
   delay(delayvar);
   LED = LED - 1;
-  if (LED == 10) {
+  if (LED == 10) { // the == makes the computer check if LED = 10. If it is, the folowing things will happen.
     LED = 13;
     delayvar = delayvar - 200;
   }
-  if (delayvar == 0) {
+  if (delayvar == 0) { // Here is another if statement that makes delayvar go back up to 2000 when it reaches 0.
     delayvar = 2000;
   }
 }
-
 ```
 ### Evidence
 
