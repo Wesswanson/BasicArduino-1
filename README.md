@@ -139,17 +139,17 @@ As I learn to edit this code, it's getting more fun because I can do so many mor
 ## VariableLEDBlink
 
 ### Description & Code
-This assignment was to make an LED blink on for 2 seconds, off for 2 seconds and then on for 1.8 seconds and off for 1.8 seconds and so on until it got down to 0 seconds when it would go back up to 2 seconds. I created that project, but then added some code to make it use 3 LEDs instead of one. It will also print the delay time and the LED that's blinking every time one turns on. Here is my code that I wrote:
+This assignment was to make an LED blink on for 1 seconds, off for 1 seconds and then on for 0.9 seconds and off for 0.8 seconds and so on until it got down to 0 seconds when it would go back up to 1 seconds. I created that project, but then added some code to make it use 3 LEDs instead of one. It will also print the delay time and the LED that's blinking every time one turns on. Here is my code that I wrote:
 ```C++
 /* Wes Swanson
   11/20/20
   Variable LED Blinker
-  This code makes three LEDs in pins 13, 12, and 11. Each one blinks for 2 seconds with 2 seconds in between before the delay time is lowered to
-  1.8 seconds and then 1.6 seconds and so on. When it reaches zero delay time it will jump back up to 2 seconds of delay time. The serial
+  This code makes three LEDs in pins 13, 12, and 11. Each one blinks for 1 seconds with 1 seconds in between before the delay time is lowered to
+  0.9 seconds and then 0.8 seconds and so on. When it reaches zero delay time it will jump back up to 1 seconds of delay time. The serial
   monitor will display the LED that is blinking as well as the current delay time when each LED turns on.
 */
 int LED = 13; //This variable is the LED that is on. It starts at 13 but will also be 12 and 11.
-int delayvar = 2000; //This variable is the delay time during and between when each LED blinks.
+int delayvar = 1000; //This variable is the delay time during and between when each LED blinks.
 
 void setup() {
   pinMode(LED, OUTPUT);
@@ -157,23 +157,24 @@ void setup() {
 }
 
 void loop() {
-  digitalWrite(LED, HIGH);
   Serial.print(LED);
   Serial.print("\t"); // This prints a space between the value of LED and the value of delayvar the size of the tab key.
   Serial.print(delayvar);
   Serial.print("\n"); // This starts a new line on the serial monitor.
+  digitalWrite(LED, HIGH);
   delay(delayvar);
   digitalWrite(LED, LOW);
   delay(delayvar);
   LED = LED - 1;
   if (LED == 10) { // the == makes the computer check if LED = 10. If it is, the folowing things will happen.
     LED = 13;
-    delayvar = delayvar - 200;
+    delayvar = delayvar - 100;
   }
-  if (delayvar == 0) { // Here is another if statement that makes delayvar go back up to 2000 when it reaches 0.
-    delayvar = 2000;
+  if (delayvar == 0) { // Here is another if statement that makes delayvar go back up to 1000 when it reaches 0.
+    delayvar = 1000;
   }
 }
+
 ```
 ### Evidence
 
