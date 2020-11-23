@@ -5,6 +5,7 @@ I'm going to learn how to use an Arduino, and make awesome things with it!
 ## TableofContents
 * [HelloArduino](#HelloArduino)
 * [FiniteLEDBlink](#FiniteLEDBlink)
+* [VariableLEDBlink](VariableLEDBlink)
 
 ## HelloArduino
 
@@ -135,4 +136,46 @@ This assignment taught me about variables and "if" statements, and I used those 
 
 As I learn to edit this code, it's getting more fun because I can do so many more things. I'm excited to learn more about this topic.
 
+## VariableLEDBlink
+
+### Description & Code
+```C++
+/* Wes Swanson
+  11/20/20
+  Variable LED Blinker
+  This code makes three LEDs in pins 13, 12, and 11. Each one blinks for 2 seconds with 2 seconds inbetween before the delay time is lowered to
+  1.8 seconds and then 1.6 seconds and so on. When it reaches zero delay time it will jump back up to 2 seconds of delay time. The serial
+  monitor will display the LED that is blinking as well as the current delay time when each LED turns on.
+*/
+int LED = 13; //This variable is the LED that is on. It starts at 13 but will also be 12 and 11.
+int delayvar = 2000; //This variable is the delay time during and between when each LED blinks.
+
+void setup() {
+  pinMode(LED, OUTPUT);
+  Serial.begin (9600);
+}
+
+void loop() {
+  digitalWrite(LED, HIGH);
+  Serial.print(LED);
+  Serial.print("\t"); // This prints a space between the value of LED and the value of delayvar the size of the tab key.
+  Serial.print(delayvar);
+  Serial.print("\n"); // This starts a new line on the serial monitor.
+  delay(delayvar);
+  digitalWrite(LED, LOW);
+  delay(delayvar);
+  LED = LED - 1;
+  if (LED == 10) {
+    LED = 13;
+    delayvar = delayvar - 200;
+  }
+  if (delayvar == 0) {
+    delayvar = 2000;
+  }
+}
+
+```
+### Evidence
+### Image or Wiring
+### Reflection
 ---
