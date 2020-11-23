@@ -188,7 +188,7 @@ This project uses the same wiring as the finite LED blinker:
 ### Reflection
 
 This project didn't use many things that weren't in the finite LED blink project, but it gave me more practice writing code and using variables and if statements. The code above has two variables: delavar which is the delay time, and LED which is the LED that is blinking (13, 12 or 11). It also had two if statements, one to make the LED value go up from 11 to 13, and one to make delayvar go up from 200 to 2000. You should only need to use one variable and one if statement with one LED blinking.
-One important thing I learned while doing this was how to create new lines and spaces on the serial monitor. I don't know if this is the most efficient way because I just looked it up using articles from [arduino.cc](arduino.cc), but these are some things I learned and used:
+One important thing I learned while doing this was how to create new lines and spaces on the serial monitor. I don't know if this is the most efficient way because I just looked it up using articles from [arduino.cc](https://www.arduino.cc/), but these are some things I learned and used:
 * serial.println(\t) will create a space the size of the tab key. You can also write it as: serial.print("\t"), but that won't be on it's own line.
 * serial.print("\n") will create a new line on the serial monitor.
 When writing your code, remember to be very clear with your writing and remember to use capitalization right especially when using variables. You can use the auto indent feature if you are using the arduino create editor.
