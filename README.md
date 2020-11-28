@@ -6,6 +6,8 @@ I'm going to learn how to use an Arduino, and make awesome things with it!
 * [HelloArduino](#HelloArduino)
 * [FiniteLEDBlink](#FiniteLEDBlink)
 * [VariableLEDBlink](#VariableLEDBlink)
+* [ButtonactivatedLED(#ButtonActivatedLED)
+* [ButtonToggledLED](#ButtonToggledLED)
 
 ## HelloArduino
 
@@ -195,7 +197,7 @@ One important thing I learned while doing this was how to create new lines and s
 
 When writing your code, remember to be very clear with your writing and remember to use capitalization right especially when using variables. You can use the auto indent feature if you are using the arduino create editor.
 
-# Button Activated LED
+# ButtonActivatedLED
 
 ```C++
 int ledPin = 2;  // LED connected to digital pin 13
@@ -218,7 +220,7 @@ void loop() {
 }
 ```
 
-# Button Toggled LED
+# ButtonToggledLED
 
 ```C++
 int currentbuttonstate;
