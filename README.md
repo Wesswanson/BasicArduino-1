@@ -195,4 +195,53 @@ One important thing I learned while doing this was how to create new lines and s
 
 When writing your code, remember to be very clear with your writing and remember to use capitalization right especially when using variables. You can use the auto indent feature if you are using the arduino create editor.
 
+# Button Activated LED
+
+```C++
+int ledPin = 2;  // LED connected to digital pin 13
+int inPin = 12;    // pushbutton connected to digital pin 7
+int val = 0;      // variable to store the read value
+
+void setup() {
+  pinMode(ledPin, OUTPUT);  // sets the digital pin 13 as output
+  pinMode(inPin, INPUT);    // sets the digital pin 7 as input
+}
+
+void loop() {
+  val = digitalRead(inPin);   // read the input pin
+  if (val == HIGH) {
+    digitalWrite(ledPin, HIGH);
+    delay(250);
+    digitalWrite(ledPin, LOW);
+    delay(250);
+  }
+}
+```
+
+# Button Toggled LED
+
+```C++
+int currentbuttonstate;
+int lastbuttonstate;
+int LEDval;
+int LEDpin = 2;
+int inpin = 12;
+
+void setup(){
+  pinMode(LEDpin, OUTPUT);
+  pinMode(inpin, INPUT);
+}
+
+void loop(){
+LEDval = digitalRead(LEDpin);
+currentbuttonstate = digitalRead(inpin);
+if(currentbuttonstate == LOW && lastbuttonstate == HIGH && LEDval == LOW){
+digitalWrite(LEDpin, HIGH);
+}
+if(currentbuttonstate == LOW && lastbuttonstate == HIGH && LEDval == HIGH){
+  digitalWrite(LEDpin, LOW);
+}
+lastbuttonstate = currentbuttonstate;
+}
+```
 ---
