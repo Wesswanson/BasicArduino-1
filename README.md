@@ -199,6 +199,8 @@ When writing your code, remember to be very clear with your writing and remember
 
 # ButtonActivatedLED
 
+### Description & Code
+
 ```C++
 int ledPin = 2;  // LED connected to digital pin 13
 int inPin = 12;    // pushbutton connected to digital pin 7
@@ -220,7 +222,16 @@ void loop() {
 }
 ```
 
+### Evidence
+
+
+### Image or Wiring
+
+### Reflection
+
 # ButtonToggledLED
+
+### Description & Code
 
 ```C++
 int currentbuttonstate;
@@ -246,4 +257,11 @@ if(currentbuttonstate == LOW && lastbuttonstate == HIGH && LEDval == HIGH){
 lastbuttonstate = currentbuttonstate;
 }
 ```
+
+### Evidence
+
+### Image or Wiring
+
+### Reflection
+
 ---
