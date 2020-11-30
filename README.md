@@ -202,17 +202,23 @@ When writing your code, remember to be very clear with your writing and remember
 ### Description & Code
 
 ```C++
-int ledPin = 2;  // LED connected to digital pin 13
-int inPin = 12;    // pushbutton connected to digital pin 7
+/*
+Wes Swanson
+11/27/20
+Button Activated LED
+This code Makes an LED blink when you hold down a button.
+*/
+int ledPin = 2;  // variable for the LED connected to digital pin 2
+int inPin = 12;    // variable for the pushbutton connected to digital pin 12
 int val = 0;      // variable to store the read value
 
 void setup() {
-  pinMode(ledPin, OUTPUT);  // sets the digital pin 13 as output
-  pinMode(inPin, INPUT);    // sets the digital pin 7 as input
+  pinMode(ledPin, OUTPUT);  // sets the digital pin 2 as output
+  pinMode(inPin, INPUT);    // sets the digital pin 12 as input
 }
 
 void loop() {
-  val = digitalRead(inPin);   // read the input pin
+  val = digitalRead(inPin);   // reads the input pin
   if (val == HIGH) {
     digitalWrite(ledPin, HIGH);
     delay(250);
@@ -224,7 +230,6 @@ void loop() {
 
 ### Evidence
 
-
 ### Image or Wiring
 
 ### Reflection
@@ -234,11 +239,17 @@ void loop() {
 ### Description & Code
 
 ```C++
-int currentbuttonstate;
-int lastbuttonstate;
-int LEDval;
-int LEDpin = 2;
-int inpin = 12;
+/*
+Wes Swanson
+11/28/20
+Button Toggled LED
+This code turns an LED on and off each time you release the button.
+*/
+int currentbuttonstate; // Variable for the current state of the button (in or out)
+int lastbuttonstate; // Variable for the last state of the button (in or out)
+int LEDval; // Variable to store the read value
+int LEDpin = 2; // variable for the LED connected to digital pin 2
+int inpin = 12; // variable for the pushbutton connected to digital pin 12
 
 void setup(){
   pinMode(LEDpin, OUTPUT);
@@ -246,7 +257,7 @@ void setup(){
 }
 
 void loop(){
-LEDval = digitalRead(LEDpin);
+LEDval = digitalRead(LEDpin); reads the input pin
 currentbuttonstate = digitalRead(inpin);
 if(currentbuttonstate == LOW && lastbuttonstate == HIGH && LEDval == LOW){
 digitalWrite(LEDpin, HIGH);
