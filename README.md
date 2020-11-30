@@ -201,6 +201,8 @@ When writing your code, remember to be very clear with your writing and remember
 
 ### Description & Code
 
+This assignment was to make an LED light up when you push a button. I made one version that turnes on the light when the button is pushed in, and one where the button toggles the LED. This is my first piece of code, that will light up an LED connected to pin 2 when the button is pressed and pin 12 receives an input.
+
 ```C++
 /*
 Wes Swanson
@@ -242,6 +244,8 @@ This image is from Mr. Helmsteter
 # ButtonToggledLED
 
 ### Description & Code
+
+This was the same assignment, but I learned some new skills that I'll talk about in the reflection that alow the LED to be turned on when the button is pushed and turned off when the button is pushed again. Here is my code:
 
 ```C++
 /*
