@@ -293,8 +293,12 @@ lastbuttonstate = currentbuttonstate;
 ### Image or Wiring
 
 ![image of wiring](https://github.com/Wesswanson/BasicArduino-1/blob/main/wiringbutton.jpg?raw=true)
-This image is from Mr. Helmsteter
+This image is from Mr. Helmsteter. It's the same wiring as last time.
 
 ### Reflection
+
+In this assignment I had to use variables in a way I hadn't used them before--To have the past value of something and the current value of it. I had to know if the button had just been released, not if it was in or out, so I needed to find out when it was just pushed in, but was now back to normal. I used one variable (currentbuttonstate) that would be set equal to whatever digitalRead() found out about the button (HIGH or LOW), and another (lastbuttonstate) that would be set equal to currentbuttonstate at the end of the cycle before currentbuttonstate was changed. Then, I used two conditional statements in the middle of the cycle to turn the light on if the button had just been released and the light was off, and to turn the light off if the button had just been released and the light was on. I also learned to use && to mean and, meaning both things had to be true for the statement to be true. This assignment was really fun and I think I can do a lot more things with my arduino now that I've learned these skills.
+
+---
 
 ---
