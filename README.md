@@ -241,6 +241,14 @@ This image is from Mr. Helmsteter
 
 ### Reflection
 
+This part of the assignment didn't involve too many more skills in terms of the coding, but I did learn a lot about how the buttons work and how to wire up a button and an LED. You can see in my image above that they are in two separate circuits, which makes sense now that I am thinking about it, but last week I thought the button and the lED would have to be connected somehow in order to work. The 5 volts pin is always sending electricity through the button and back to ground, but when the button is pressed it allows electricity to the other side where there is another wire connected to pin 12. This pin is set to "input" during the setup process of the code, so it is used to tell whether the button has been pushed.
+I did learn how to use "digitalRead()" to read the input of pin 12 in this assignment. Remember these things when trying to read the input level of a pin:
+* Write it correctly and write the pin or variable inside the parentheses after digitalRead.
+* set the value that is read equal to a variable such as val in my code
+* Use that variable to eather print the value (serial.Print(val) or use it in an If statement (if (val == HIGH)...)
+
+Also remember to put the button in the right way. I had trouble while working on this and I thought my code was wrong, but really my wiring was messed up.
+
 # ButtonToggledLED
 
 ### Description & Code
