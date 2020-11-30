@@ -234,7 +234,7 @@ void loop() {
 
 ### Image or Wiring
 
-![image of wiring](https://cvilleschools.instructure.com/courses/31052/files/1951975/download?wrap=1)
+![image of wiring](https://github.com/Wesswanson/BasicArduino-1/blob/main/wiringbutton.jpg?raw=true)
 This image is from Mr. Helmsteter
 
 ### Reflection
@@ -280,7 +280,7 @@ lastbuttonstate = currentbuttonstate;
 
 ### Image or Wiring
 
-![image of wiring](https://cvilleschools.instructure.com/courses/31052/files/1951975/download?wrap=1)
+![image of wiring](https://github.com/Wesswanson/BasicArduino-1/blob/main/wiringbutton.jpg?raw=true)
 This image is from Mr. Helmsteter
 
 ### Reflection
