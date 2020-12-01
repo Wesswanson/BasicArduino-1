@@ -8,6 +8,7 @@ I'm going to learn how to use an Arduino, and make awesome things with it!
 * [VariableLEDBlink](#VariableLEDBlink)
 * [ButtonactivatedLED](#ButtonActivatedLED)
 * [ButtonToggledLED](#ButtonToggledLED)
+* [TwoButtonsTwoLEDs](#TwoButtonsTwoLEDs)
 
 ## HelloArduino
 
@@ -299,6 +300,53 @@ This image is from Mr. Helmsteter. It's the same wiring as last time.
 
 In this assignment I had to use variables in a way I hadn't used them before--To have the past value of something and the current value of it. I had to know if the button had just been released, not if it was in or out, so I needed to find out when it was just pushed in, but was now back to normal. I used one variable (currentbuttonstate) that would be set equal to whatever digitalRead() found out about the button (HIGH or LOW), and another (lastbuttonstate) that would be set equal to currentbuttonstate at the end of the cycle before currentbuttonstate was changed. Then, I used two conditional statements in the middle of the cycle to turn the light on if the button had just been released and the light was off, and to turn the light off if the button had just been released and the light was on. I also learned to use && to mean and, meaning both things had to be true for the statement to be true. This assignment was really fun and I think I can do a lot more things with my arduino now that I've learned these skills.
 
----
+# TwoButtonsTwoLEDs
+
+### Description & Code
+
+```C++
+/*
+  Wes Swanson
+  11/27/20
+  Button Activated LED
+  This code Makes an LED blink when you hold down a button.
+*/
+int ledPin = 8;  // variable for the LED connected to digital pin 8
+int inPin = 2;    // variable for the pushbutton connected to digital pin 2
+int val = 0;      // variable to store the read value
+int ledPin2 = 12;  // variable for the LED connected to digital pin 12
+int inPin2 = 4;    // variable for the pushbutton connected to digital pin 4
+int val2 = 0;      // variable to store the read value
+
+void setup() {
+  pinMode(ledPin, OUTPUT);  // sets the digital pin 8 as output
+  pinMode(inPin, INPUT);    // sets the digital pin 2 as input
+  pinMode(ledPin2, OUTPUT);  // sets the digital pin 12 as output
+  pinMode(inPin2, INPUT);    // sets the digital pin 4 as input
+}
+
+void loop() {
+  val = digitalRead(inPin);   // reads the input pin
+  if (val == HIGH) { // if the button is pushed in, the LED blinks
+    digitalWrite(ledPin, HIGH);
+    delay(250);
+    digitalWrite(ledPin, LOW);
+    delay(250);
+  }
+  val2 = digitalRead(inPin2);   // reads the 2nd input pin
+  if (val2 == HIGH) { // if the 2nd button is pushed in, the 2nd LED blinks
+    digitalWrite(ledPin2, HIGH);
+    delay(250);
+    digitalWrite(ledPin2, LOW);
+    delay(250);
+  }
+}
+```
+
+### Evidence
+
+### Image or Wiring
+
+### Reflection
 
 ---
