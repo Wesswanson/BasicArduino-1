@@ -345,6 +345,8 @@ void loop() {
 
 ### Evidence
 
+[Click here to view the code on Arduino Create](https://create.arduino.cc/editor/wswanso44/ed5f025f-d449-4608-8e2c-79e0ce4679d4/preview)
+
 ### Image or Wiring
 
 ### Reflection
