@@ -9,6 +9,7 @@ I'm going to learn how to use an Arduino, and make awesome things with it!
 * [ButtonactivatedLED](#ButtonActivatedLED)
 * [ButtonToggledLED](#ButtonToggledLED)
 * [TwoButtonsTwoLEDs](#TwoButtonsTwoLEDs)
+* [Two Button Servo Control](#TwoButtonServoControl)
 
 ## HelloArduino
 
@@ -358,5 +359,15 @@ void loop() {
 ### Reflection
 
 This assignment was relatively easy, but I did get stuck in a few places. After realizing I didn't have any wires in my box and picking them up at school, I was able to follow the steps on the website linked under "image or wiring" to get the wiring right. Remember which sides of the button are connected, and which sides are separated when you set up the wiring. After I figured that out, I just copied and pasted each section of my code from [ButtonActivatedLED](#ButtonActivatedLED) and changed the variables to write the code above.
+
+## TwoButtonServoControl
+
+### Description & Code
+
+### Evidence
+
+### Image
+
+### Reflection
 
 ---
