@@ -364,6 +364,55 @@ This assignment was relatively easy, but I did get stuck in a few places. After 
 
 ### Description & Code
 
+```C++
+/*
+Wes Swanson
+Two Button Servo Control
+This makes the servo turn from 90 to 0 degrees and back if one button is pressed and turn from 90 to 180 degrees and back if the other button is pressed. The serial monitor will also display which button is pressed. The buttons "toggle" the servo, so every time the button is pressed in it should turn, and it won't work if you hold the buttons in.
+*/
+// Include the Servo library
+#include <Servo.h>
+// Declare the Servo pin
+int servoPin = 3;
+// Create a servo object
+Servo myServo;
+int buttonstate1 = LOW;
+int lastbuttonstate1 = LOW;
+int buttonstate2 = LOW;
+int lastbuttonstate2 = LOW;
+int buttonin1 = 12;
+int buttonin2 = 8;
+void setup() {
+  // We need to attach the servo to the used pin number
+  myServo.attach(servoPin);
+  pinMode(buttonin1, INPUT);
+  pinMode(buttonin2, INPUT);
+  Serial.begin(9600);
+}
+void loop() {
+  buttonstate1 = digitalRead(buttonin1);
+  buttonstate2 = digitalRead(buttonin2);
+
+  if (buttonstate1 == HIGH && lastbuttonstate1 == LOW) {
+    Serial.println("button 1 was pushed");
+    // Make servo go to 180 degrees
+    myServo.write(180);
+    delay(250);
+    // Make servo go to 90 degrees
+    myServo.write(90);
+  }
+  if (buttonstate2 == HIGH && lastbuttonstate2 == LOW) {
+    Serial.println("button 2 was pushed");
+    // Make servo go to 0 degrees
+    myServo.write(0);
+    delay(250);
+    // Make servo go to 90 degrees
+    myServo.write(90);
+  }
+  lastbuttonstate1 = buttonstate1;
+  lastbuttonstate2 = buttonstate2;
+}
+
 ### Evidence
 
 ### Image
