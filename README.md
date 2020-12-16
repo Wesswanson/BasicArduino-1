@@ -420,7 +420,7 @@ void loop() {
 
 ### Image or Wiring
 
-![wiring](-15%20athttps://github.com/Wesswanson/BasicArduino-1/blob/main/Screenshot%202020-12%209.35.25%20PM.png?raw=true)
+![wiring](https://github.com/Wesswanson/BasicArduino-1/blob/main/Screenshot%202020-12-15%20at%209.35.25%20PM.png?raw=true)
 
 This is an image I made on Tinkercad
 
