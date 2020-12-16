@@ -418,7 +418,7 @@ void loop() {
 
 [Click here to view the code on the Arduino editor](https://create.arduino.cc/editor/wswanso44/ed5f025f-d449-4608-8e2c-79e0ce4679d4/preview)
 
-### Image
+### Image or Wiring
 
 ### Reflection
 
