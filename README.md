@@ -364,6 +364,8 @@ This assignment was relatively easy, but I did get stuck in a few places. After 
 
 ### Description & Code
 
+This assignment was to be able to control a servo with two buttons. When one button is pushed it turns 90 degrees one way and back, when the other button is pushed it turns 90 degrees the other way and back. I had some trouble getting it to work, but after fixing both my code and wiring, I finaly got my servo to spin. Here is my code:
+
 ```C++
 /*
 Wes Swanson
@@ -425,5 +427,15 @@ void loop() {
 This is an image I made on Tinkercad
 
 ### Reflection
+
+   In this assignment I not only learned to make a servo spin (which I'll provide some tips for below), but I learned some other good techniques in rooting out a problem and fixing it. When i was testing it, I found that the servo was spinning back and forth no matter what, even when I hadn't pressed the button. That could either be from the code, or the buttons. I learned that I could use the serial monitor to print the words "button 1 was pressed" or "button 2 was pressed" to determine if the computer actually thought the buttons were being pressed or if it thought it was supposed to be spinning the servo even when the buttons weren't pressed. Using the monitor that way can help you find problems in your wiring and code and fix them. I found that my resistors were in the same row as my 5V on the buttons, when they should be in the same row as my input wire to help clear the wire after the button has been released, so the computer always thought the button had just been pressed.
+When building this project, here are some tips I came up with from my experience making this:
+
+* Always include the serial library in the right format like I have above so you can set angles for the servo to turn to.
+
+* In your wiring, make sure all the buttons and wires are pushed all the way into the right pins, because projects with complicated wiring like this one can stop working even when only one wire or resistor is shifted out of the right pin.
+
+* A helpful source I used for some parts of this was [this project](https://create.arduino.cc/projecthub/akshayjoseph666/control-servo-motor-with-arduino-uno-and-pushbutton-18613f) on the Arduino editor. 
+* I mostly used this source from the [Arduino website](https://www.arduino.cc/reference/en/libraries/servo/) on servos for info on the coding and wiring.
 
 ---
